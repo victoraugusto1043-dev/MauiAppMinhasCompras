@@ -3,7 +3,7 @@ using Android.Runtime;
 
 namespace MauiAppMinhasCompras
 {
-    [Application]
+    // Remover o atributo [Application] pois "Application" não é um atributo válido.
     public class MainApplication : MauiApplication
     {
         public MainApplication(IntPtr handle, JniHandleOwnership ownership)
