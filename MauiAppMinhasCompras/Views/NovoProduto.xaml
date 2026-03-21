@@ -6,12 +6,12 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
-    
+
     <ContentPage.Content>
         <VerticalStackLayout Spacing="10" Padding="10">
             <Label Text="Descrição do Produto:" />
             <Entry x:Name="txt_descricao" />
-            
+
             <Label Text="Quantidade:" />
             <Entry x:Name="txt_quantidade" Keyboard="Numeric" />
 
