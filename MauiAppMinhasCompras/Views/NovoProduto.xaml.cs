@@ -22,14 +22,16 @@ namespace MauiAppMinhasCompras.Views
                 {
                     Descricao = txt_descricao.Text,
                     Quantidade = double.Parse(txt_quantidade.Text),
-                    Preco = double.Parse(txt_preco.Text)
+                    Preco = double.Parse(txt_preco.Text),
+                    DataCadastro = dtp_dataCadastro.Date
                 };
                 await App.Database.Insert(p);
                 await DisplayAlert("Sucesso", "Produto cadastrado com sucesso!", "OK");
             }
             catch (Exception ex)
             {
-               await DisplayAlert("Ops", $"Ocorreu um erro: {ex.Message}", "OK");
+                await DisplayAlert("Ops", $"Ocorreu um erro: {ex.Message}", "OK");
             }
         }
     }
+}

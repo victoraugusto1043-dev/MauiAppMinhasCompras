@@ -117,4 +117,16 @@ public partial class ListaProduto : ContentPage
             DisplayAlert("Ops", $"Ocorreu um erro: {ex.Message}", "OK");
         }
     }
+
+    private  void ToolbarItem_Clicked_2(object sender, EventArgs e)
+    {
+        try
+        {
+             Navigation.PushAsync(new Views.NewPage1());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", $"Ocorreu um erro: {ex.Message}", "OK");
+        }
+    }
 }

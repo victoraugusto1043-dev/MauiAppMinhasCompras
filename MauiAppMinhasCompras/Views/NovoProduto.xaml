@@ -17,6 +17,9 @@
 
             <Label Text="Preço Unitário:" />
             <Entry x:Name="txt_preco" Keyboard="Numeric" />
+
+            <Label Text="Data de Cadastro:" />
+            <DatePicker x:Name="dtp_dataCadastro" />
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>
